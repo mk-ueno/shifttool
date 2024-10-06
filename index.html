@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シフト合計時間計算</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>シフト合計時間計算ツール</h1>
+    <textarea id="shift-data" placeholder="シフトデータをここに貼り付けてください"></textarea><br>
+    <input type="number" id="hourly-wage" placeholder="時給を入力してください (円):"><br>
+    <input type="number" id="commute-cost" placeholder="片道の通勤代を入力してください (円):"><br>
+    <button id="calculate-button">合計時間を計算</button>
+    <div class="result">
+        <h2>合計勤務時間: <span id="total-work-hours">0</span> 時間</h2>
+        <h2>推定給与: <span id="estimated-salary">0</span> 円</h2>
+    </div>
+    <button id="calendar-button">カレンダーに追加(β版)</button>
+
+    <footer>
+        <p>情報セキュリティポリシーに基づき各データはサイトに保存されません</p>
+        <p>ver1.5</p>
+        <p>&copy; 2024 上野悠月</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
